@@ -4,7 +4,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import Container from '../components/container'
 import FancyLink from '../components/fancyLink'
-import { fade } from "../helpers/transitions"
+import { fade, reveal } from "../helpers/transitions"
 import { motion } from 'framer-motion'
 import { SmoothScrollProvider } from '../contexts/SmoothScroll.context'
 

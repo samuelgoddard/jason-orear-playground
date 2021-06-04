@@ -1,5 +1,5 @@
 import Layout from '../components/layout'
-import { fade } from "../helpers/transitions"
+import { fade, reveal, revealDelay1, revealDelay2 } from "../helpers/transitions"
 import { motion } from 'framer-motion'
 import { SmoothScrollProvider } from '../contexts/SmoothScroll.context'
 
@@ -20,16 +20,30 @@ export default function Home() {
                 <div className="w-7/12">
                   <div className="mt-auto self-end w-full">
                     <div className="mb-[3vh]">
-                      <span className="text-sm block uppercase tracking-widest">(Client)</span>
-                      <span className="text-sm block uppercase tracking-widest mb-3">Gensler Architects</span>
-                      <span className="text-sm block uppercase tracking-widest">(Location)</span>
-                      <span className="text-sm block uppercase tracking-widest mb-3">San Francisco</span>
-                      <span className="text-sm block uppercase tracking-widest">(GPS)</span>
-                      <span className="text-sm block uppercase tracking-widest">37°46'09.3"N 122°23'20.5"W</span>
+                      <div className="overflow-hidden">
+                        <motion.span variants={revealDelay1} className="text-sm block uppercase tracking-widest">(Client)</motion.span>
+                      </div>
+                      <div className="overflow-hidden mb-3">
+                        <motion.span variants={revealDelay1} className="text-sm block uppercase tracking-widest">Gensler Architects</motion.span>
+                      </div>
+                      <div className="overflow-hidden">
+                        <motion.span variants={revealDelay1} className="text-sm block uppercase tracking-widest">(Location)</motion.span>
+                      </div>
+                      <div className="overflow-hidden mb-3">
+                        <motion.span variants={revealDelay1} className="text-sm block uppercase tracking-widest">San Francisco</motion.span>
+                      </div>
+                      <div className="overflow-hidden">
+                        <motion.span variants={revealDelay1} className="text-sm block uppercase tracking-widest">(GPS)</motion.span>
+                      </div>
+                      <div className="overflow-hidden">
+                        <motion.span variants={revealDelay1} className="text-sm block uppercase tracking-widest">37°46'09.3"N 122°23'20.5"W</motion.span>
+                      </div>
                     </div>
                     
                     <div>
-                      <h1 className="text-xl uppercase font-display text-[7.4vw] mb-[0.5vw] block leading-none ml-[5.275vw]" data-scroll data-scroll-speed="3">Shack 15</h1>
+                      <div className="overflow-hidden" data-scroll data-scroll-speed="3">
+                        <motion.h1 variants={reveal} className="text-xl uppercase font-display text-[7.4vw] mb-[0.5vw] block leading-none ml-[5.275vw]">Shack 15</motion.h1>
+                      </div>
                       <div className="h-screen max-h-[50vh] w-full">
                         <img src="/images/shack-01.jpg" alt="Shack 15" className="w-full h-full object-cover object-center" />
                       </div>
@@ -39,7 +53,9 @@ export default function Home() {
 
                 <div className="w-5/12">
                   <div className="w-9/12 mx-auto text-center">
-                    <span className="text-[2.5vw] leading-none block mt-[15vw]">*JO’R — PRJ_05</span>
+                    <div className="overflow-hidden">
+                      <motion.span variants={revealDelay2} className="text-[2.5vw] leading-none block mt-[15vw]">*JO’R — PRJ_05</motion.span>
+                    </div>
                   </div>
                 </div>
               </div>
