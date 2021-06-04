@@ -45,7 +45,7 @@ export default function Home() {
                         <motion.h1 variants={reveal} className="text-xl uppercase font-display text-[7.4vw] mb-[0.5vw] block leading-none ml-[5.275vw]">Shack 15</motion.h1>
                       </div>
                       <div className="h-screen max-h-[50vh] w-full">
-                        <img src="/images/shack-01.jpg" alt="Shack 15" className="w-full h-full object-cover object-center" />
+                        <img src="/images/shack-01.jpg" alt="Shack 15" className="w-full h-full object-cover object-center will-change" />
                       </div>
                     </div>
                   </div>
@@ -75,7 +75,7 @@ export default function Home() {
               <div className="flex flex-wrap w-full items-center justify-center">
                 <div className="w-8/12">
                   <div className="h-screen max-h-[55vh]">
-                    <img src="images/shack-02.jpg" alt="Shack 15" className="w-full h-full object-cover object-center" />
+                    <img src="images/shack-02.jpg" alt="Shack 15" className="w-full h-full object-cover object-center will-change" />
                   </div>
                 </div>
               </div>
@@ -95,7 +95,7 @@ export default function Home() {
               <div className="flex flex-wrap w-full items-center justify-center">
                 <div className="w-3/12">
                   <div className="h-screen max-h-[60vh]">
-                    <img src="images/shack-03.jpg" alt="Shack 15" className="w-full h-full object-cover object-center" />
+                    <img src="images/shack-03.jpg" alt="Shack 15" className="w-full h-full object-cover object-center will-change" />
                   </div>
                 </div>
               </div>
@@ -114,13 +114,13 @@ export default function Home() {
             <div className="w-full flex flex-wrap items-start min-h-screen p-6 py-[75px]">
               <div className="w-3/12 self-start mb-auto">
                 <div className="h-screen max-h-[54vh]">
-                  <img src="/images/shack-04.jpg" alt="Shack 15" className="w-full h-full object-cover object-center" />
+                  <img src="/images/shack-04.jpg" alt="Shack 15" className="w-full h-full object-cover object-center will-change" />
                 </div>
               </div>
 
               <div className="w-7/12 self-end ml-auto">
                 <div className="h-screen max-h-[60vh]">
-                  <img src="/images/shack-05.jpg" alt="Shack 15" className="w-full h-full object-cover object-center" />
+                  <img src="/images/shack-05.jpg" alt="Shack 15" className="w-full h-full object-cover object-center will-change" />
                 </div>
               </div>
             </div>
