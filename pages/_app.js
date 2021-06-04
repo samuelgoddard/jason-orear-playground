@@ -1,23 +1,26 @@
 import '../styles/main.css'
 import { AnimatePresence } from 'framer-motion'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 export default function App({ Component, pageProps }) {
   const router = useRouter()
 
   return (
     <>
-      <div className="fixed top-0 left-0 w-full z-50 pt-6 px-6">
+      <div className={`fixed top-0 left-0 w-full z-50 pt-6 px-6 transition ease-in-out duration-500 ${ router.pathname != '/about'  ? 'text-black ' : 'text-white delay-500' }`}>
         <div className="w-full">
           <div className="flex flex-wrap justify-center">
-            <span className="flex-1 uppercase text-sm md:text-lg 2xl:text-xl font-display">About</span>
-            <span className="flex-1 text-center mx-auto uppercase text-sm md:text-lg 2xl:text-xl font-display">Jason O'Rear</span>
+            <Link href="/about"><a className="flex-1 uppercase text-sm md:text-lg 2xl:text-xl font-display">About</a></Link>
+
+            <Link href="/"><a className="flex-1 text-center mx-auto uppercase text-sm md:text-lg 2xl:text-xl font-display">Jason O'Rear</a></Link>
+
             <span className="flex-1 text-right ml-auto uppercase text-sm md:text-lg 2xl:text-xl font-display">Projects</span>
           </div>
         </div>
       </div>
 
-      <div className="fixed bottom-0 left-0 w-full z-50 pb-6 px-6">
+      <div className={`fixed bottom-0 left-0 w-full z-50 pb-6 px-6 transition ease-in-out duration-500 ${ router.pathname != '/about'  ? 'opacity-100' : 'opacity-0' }`}>
         <div className="w-full">
           <div className="flex flex-wrap justify-end">
             <span className="flex-1 uppercase text-sm md:text-lg 2xl:text-xl font-display">Focus Mode</span>
