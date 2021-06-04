@@ -1,8 +1,17 @@
-/* @font-face {
-  font-family: 'Raglan Sans';
-  src: url('../public/fonts/RaglanSans-Regular.woff2') format('woff2'),
-      url('../public/fonts/RaglanSans-Regular.woff') format('woff');
+@font-face {
+  font-family: 'Albert';
+  src: url('../public/fonts/Albert-Medium.woff2') format('woff2'),
+      url('../public/fonts/Albert-Medium.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-} */
+}
+
+@font-face {
+  font-family: 'NeueHaasUnica';
+  src: url('../public/fonts/NeueHaasUnica-Regular.woff2') format('woff2'),
+      url('../public/fonts/NeueHaasUnica-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
